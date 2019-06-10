@@ -1,6 +1,6 @@
 # User Authentication With Express and Mongo
 
-Aiming to include these functionalities in our uberAmbulance tutorial for proper user-registration and user-authentication derived from Treehouse tutorial.
+Aiming to include these functionalities in our uberAmbulance app for proper user-registration and user-authentication derived from a Treehouse tutorial on how to build a basic Node-app for user-authentication with Express and mongoDB.
 
 ## Launch Demo
 
