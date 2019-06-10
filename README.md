@@ -4,6 +4,22 @@ Aiming to include these functionalities in our uberAmbulance tutorial for proper
 
 ## Launch Demo
 
+### Install MongoDB
+
+1. Go to [mongoDB community](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x) and follow instructions for install (assuming [homebrew](https://brew.sh/) is your system package-manager). 
+
+	* `brew tap mongodb/brew`
+
+	* `brew install mongodb-community@4.0`
+
+	* `brew services start mongodb-community@4.0`
+
+2. Fire-up mongo by typing `mongo`
+
+3. check dbs by running `show dbs`
+
+### NPM
+
 1. Run `npm install`.
 
 2. Watch for bcrypt issue- make sure to modify that dependency for `"bcrypt": "^3.0.6",` in the package.json file.
