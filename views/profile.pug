@@ -9,3 +9,7 @@ block content
           | #{name}
         h2.favorite-book Favorite Book
         | #{favorite}
+        h2#notification
+        button(onclick='requestForHelp()')
+          | Request for help
+        #map(style='width: 600px; height: 400px;')
