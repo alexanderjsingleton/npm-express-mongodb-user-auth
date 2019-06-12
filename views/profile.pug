@@ -7,9 +7,20 @@ block content
         h1.display-4
           img.avatar.img-circle.hidden-xs-down(src='/images/avatar.png', alt='avatar')
           | #{name}
-        h2.favorite-book Favorite Book
+        h2.favorite-book Dispatch Queue
         | #{favorite}
         h2#notification
         button(onclick='requestForHelp()')
           | Request for help
+        link(href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet')
         #map(style='width: 600px; height: 400px;')
+        <div id='map' style='width: 600px; height: 400px;'>
+          <!-- Load a map here -->
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+          L.mapbox.accessToken = 'pk.eyJ1IjoiYWxleGFuZGVyanNpbmdsZXRvbiIsImEiOiJjandiNXZsazcwaGR0NDRvNnhvdmMxaHFnIn0.TExE3D_nDmXGsxOnFalN1g';
+          //Load the map and set it to a given lat-lng
+          map = L.mapbox.map('map', 'mapbox.streets');
+          map.setView([38.902810, -77.050740], 15)
